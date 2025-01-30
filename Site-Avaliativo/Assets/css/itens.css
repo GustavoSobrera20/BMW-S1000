@@ -1,0 +1,107 @@
+#carros-destaque .titulo {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Estilização da imagem do card */
+#carros-destaque .foto-card {
+    display: block; /* Garante que a imagem ocupe toda a largura do contêiner */
+    width: 100%; /* A imagem ocupa toda a largura do card */
+    height: 300px; /* Define uma altura fixa para as imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+}
+
+/* Estilização do contêiner de cards */
+.container-cards {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha se necessário */
+    justify-content: center; /* Alinha os cards no centro */
+    gap: 60px; /* Espaçamento entre os cards */
+    padding: 0 20px; /* Adiciona padding para dar um respiro nos lados */
+}
+
+/* Estilização de cada card */
+.cards-1 {
+    border-radius: 20px; /* Bordas arredondadas */
+    width: 280px; /* Largura fixa para os cards */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o card */
+    background-color: #E2E2E2; /* Adiciona fundo para os cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover */
+.cards-1:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao hover */
+}
+
+/* Estilização do figcaption */
+#carros-destaque figcaption {
+    padding: 10px 15px 10px 15px; /* Ajuste do padding */
+    display: flex;
+    flex-grow: 1; /* Usa todo o espaço disponível dentro do card */
+    flex-direction: column;
+}
+
+/* Estilização do título do card */
+#carros-destaque figcaption h4 {
+    margin: 0 0 10px 0; /* Espaçamento entre título e descrição */
+    font-weight: 800;
+    font-size: 1.4em; /* Ajusta o tamanho da fonte do título */
+    text-align: center; /* Garante que o título fique centralizado */
+}
+
+/* Estilização da descrição do card */
+#carros-destaque figcaption p {
+    line-height: 1.4; /* Ajusta o espaçamento entre linhas */
+    overflow: hidden; /* Esconde o restante da descrição */
+}
+
+/* Limitar a descrição a um número específico de linhas */
+#carros-destaque figcaption p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Máximo de 4 linhas da descrição */
+    -webkit-box-orient: vertical;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1400px) {
+    #carros-destaque .titulo {
+        font-size: 20px;
+        padding-top: 30px;
+    }
+
+    /* Ajuste nos cards para telas menores */
+    .container-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Diminui o espaço entre os cards */
+    }
+
+    .cards-1 {
+        width: 90%; /* Ajusta os cards para ocupar 90% da largura da tela */
+    }
+}
+
+@media (max-width: 480px) {
+    #carros-destaque .titulo {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    /* Ajuste nos cards para telas menores */
+    .container-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Diminui o espaço entre os cards */
+    }
+
+    .cards-1 {
+        width: 100%; /* Ajusta os cards para ocupar toda a largura da tela */
+    }
+}

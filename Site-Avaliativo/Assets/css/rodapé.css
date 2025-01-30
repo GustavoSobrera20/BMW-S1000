@@ -1,0 +1,87 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de igual largura */
+    background-color: #838383;
+    color: black;
+    padding: 20px; /* Adiciona padding ao redor do rodapé */
+    
+}
+
+.footer-section {
+    margin: 10px; /* Adiciona margem entre as seções */
+}
+
+.footer-section h5 {
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.footer-section h6 {
+    margin-bottom: 5px; /* Espaço abaixo dos itens */
+}
+
+.footer-section a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: rgb(255, 255, 255); /* Cor do texto dos links */
+    transition: 1s;
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: #ffffff; /* Muda a cor ao passar o mouse */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .info {
+        grid-template-columns: repeat(2, 1fr); /* Muda para 2 colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .info {
+        grid-template-columns: 1fr; /* Muda para 1 coluna em telas muito pequenas */
+    }
+}
+.simule {
+   
+    font-size: 20px; /* Tamanho da fonte */
+    border-radius: 4px; /* Bordas arredondadas */
+    background-color: black; /* Cor de fundo */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição suave */
+    padding: 20px 30px; /* Adiciona espaçamento interno (padding) */
+    display: inline-block; /* Permite que o elemento tenha largura e altura definidas */
+}
+
+/* Exemplo de estado hover para demonstrar a transição */
+.simule:hover {
+    background-color: rgb(32, 77, 161); /* Muda a cor de fundo ao passar o mouse */
+    color: rgb(255, 255, 255); /* Muda a cor do texto ao passar o mouse */
+}

@@ -1,0 +1,48 @@
+#img-footer {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Coloca a imagem e o texto em colunas */
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 10px; /* Espaçamento entre a imagem e o texto */
+    padding: 20px; /* Adiciona padding ao redor do contêiner */
+}
+
+.img-text {
+    margin-left: 100px; /* Margem à esquerda da imagem */
+    width: 400px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 80px; /* Margem superior da imagem */
+}
+
+.title {
+    margin-top: 130px; /* Margem superior do título */
+    margin-left: 50px; /* Margem à esquerda do título */
+    margin-right: 140px; /* Margem à direita do título */
+    font-size: 30px; /* Tamanho da fonte do título */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 900px) {
+    #img-footer {
+        grid-template-columns: 1fr; /* Muda para uma coluna em telas menores */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .img-text {
+        margin-left: 0; /* Remove a margem à esquerda em telas menores */
+        margin-top: 20px; /* Ajusta a margem superior em telas menores */
+        width: 100%; /* Faz a imagem ocupar 100% da largura disponível */
+    }
+
+    .title {
+        margin-top: 20px; /* Ajusta a margem superior do título em telas menores */
+        margin-left: 0; /* Remove a margem à esquerda em telas menores */
+        margin-right: 0; /* Remove a margem à direita em telas menores */
+        font-size: 24px; /* Reduz o tamanho da fonte do título em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 20px; /* Reduz ainda mais o tamanho da fonte do título em telas muito pequenas */
+    }
+}
