@@ -9,7 +9,7 @@
 }
 
 /* Estilização da imagem do card */
-#carros-destaque .foto-card {
+#carros-destaque .foto-itens {
     display: block; /* Garante que a imagem ocupe toda a largura do contêiner */
     width: 100%; /* A imagem ocupa toda a largura do card */
     height: 300px; /* Define uma altura fixa para as imagens */
