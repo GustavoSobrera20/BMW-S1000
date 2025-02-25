@@ -70,7 +70,7 @@
 }
 
 /* Media Queries para Responsividade */
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     #carros-destaque .titulo {
         font-size: 20px;
         padding-top: 30px;
